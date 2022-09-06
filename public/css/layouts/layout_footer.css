@@ -1,0 +1,38 @@
+/* 
+Layout que contiene el footer de la aplicacion 
+*/
+footer {
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 50px 0px;
+  font-family: var(--font-title);
+}
+footer .logo-footer {
+  width: 10%;
+}
+.d-rrss {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 28px;
+  line-height: 32px;
+}
+.d-info {
+  text-align: center;
+  margin-top: 64px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.d-rrss a,
+.d-info a {
+  color: var(--color-white);
+  padding-left: 12px;
+  padding-right: 12px;
+  opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+}
+.d-rrss a:hover:nth-child(odd),
+.d-info a:hover:nth-child(odd) {
+  color: var(--color-marron-corporativo);
+}

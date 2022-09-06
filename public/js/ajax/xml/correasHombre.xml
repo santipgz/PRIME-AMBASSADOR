@@ -1,0 +1,40 @@
+<!-- 
+    XML que contiene la informacion relativa a las correas tanto de hombre-page como de mujer-page, es leido por js-ajax y pintado
+ -->
+<correasHombre>
+    <correasgold>
+        <correa>
+            <imagen>../images/1-correagold.png</imagen>
+            <nombre>Brown leather</nombre>
+            <precio>29 €</precio>
+        </correa>
+        <correa>
+            <imagen>../images/2-correagold.png</imagen>
+            <nombre>mesh</nombre>
+            <subtitulo>Cuero genuino con hebilla dorada</subtitulo>
+            <precio>45 €</precio>
+        </correa>
+        <correa>
+            <imagen>../images/3-correagold.png</imagen>
+            <nombre>Black Leather</nombre>
+            <precio>50 €</precio>
+        </correa>
+    </correasgold>
+    <correassilver>
+         <correa>
+            <imagen>../images/1-correasilver.png</imagen>
+            <nombre>Black leather</nombre>
+            <precio>45 €</precio>
+        </correa>
+        <correa>
+            <imagen>../images/3-correasilver.png</imagen>
+            <nombre>Brow leather</nombre>
+            <precio>60 €</precio>
+        </correa>
+        <correa>
+            <imagen>../images/2-correasilver.png</imagen>
+            <nombre>Mesh</nombre>
+            <precio>29 €</precio>
+        </correa>
+    </correassilver>
+</correasHombre>

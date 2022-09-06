@@ -1,0 +1,133 @@
+/* 
+    HEADER HOMBRE MUJER CONTACTO
+*/
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header.scrollmenu {
+  background-color: var(--color-black);
+}
+header a {
+  color: var(--color-white);
+}
+.navbar {
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.hamburguer {
+  display: block;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-white);
+}
+.nav-branding {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--font-title);
+}
+.elegiridioma:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--color-marron-corporativo);
+}
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: var(--color-black);
+  width: 100vw;
+  height: 100vh;
+  transition: 0.3s;
+}
+.nav-item {
+  margin: 16px 0;
+}
+.nav-menu.active {
+  left: 0;
+}
+.nav-link {
+  transition: 0.3s ease-in-out;
+}
+.nav-link:hover {
+  border-bottom: 2px solid var(--color-white);
+}
+.hamburguer.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburguer.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburguer.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.idiomdesk {
+  display: none;
+}
+
+.s-textobanner {
+  width: 80%;
+  margin: auto;
+  color: var(--color-white);
+  text-align: center;
+  flex-direction: column;
+  padding: 110px 0px;
+}
+.s-textobanner h2 {
+  margin-bottom: 20px;
+}
+.s-textobanner p {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .idiomdesk {
+    display: block;
+  }
+  .idiommobil {
+    display: none;
+  }
+  .nav-menu {
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .hamburguer {
+    display: none;
+    cursor: pointer;
+  }
+  .bar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .s-textobanner {
+    width: 44%;
+  }
+  .s-textobanner p {
+    display: block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .s-textobanner {
+    width: 35%;
+  }
+}

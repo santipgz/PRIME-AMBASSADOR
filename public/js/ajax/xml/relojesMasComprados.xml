@@ -1,0 +1,18 @@
+<!-- 
+    XML que contiene la informacion relativa a los relojes favoritos de la home-page. Leidos por ajax-js y vanilla js
+ -->
+
+<relojesmascomprados>
+    <reloj>
+        <nombre>heritage 1921</nombre>
+        <imagen>images/watch-1921.png</imagen>
+    </reloj>
+       <reloj>
+        <nombre>heritage 1863</nombre>
+        <imagen>images/watch-1863.png</imagen>
+    </reloj>
+       <reloj>
+        <nombre>heritage 1959</nombre>
+        <imagen>images/watch-1959.png</imagen>
+    </reloj>
+</relojesmascomprados>

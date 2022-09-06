@@ -1,0 +1,130 @@
+/* BANNER INICIO */
+
+.s-banner {
+  min-height: 500px;
+  background-image: url("../images/contactobanner.jpeg");
+  background-size: cover;
+  background-position: left center;
+}
+
+/* HTML */
+html {
+  background-color: #1e1c1c !important;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.main-section {
+  width: 80%;
+  margin: 60px auto;
+}
+.form-section {
+  margin-bottom: 60px;
+}
+.email-section a {
+  color: #979797;
+}
+.main-section h3 {
+  color: var(--color-marron-corporativo);
+  margin-bottom: 30px;
+}
+.form-section select,
+.inputpeq input,
+.form-section textarea {
+  font-family: var(--font-title);
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid var(--color-marron-corporativo);
+  color: #979797;
+  width: 100%;
+  padding: 15px 5px;
+  background-color: transparent;
+  margin: 15px auto;
+}
+#terms {
+  display: none;
+}
+.i-checkbox {
+  font-family: var(--font-title);
+  color: #979797;
+  width: 100%;
+  margin: 15px auto;
+  position: relative;
+}
+.i-checkbox a {
+  color: var(--color-marron-corporativo);
+}
+input[type="checkbox"]:not(old) + label {
+  cursor: pointer;
+}
+input[type="checkbox"]:not(old) + label:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px double var(--color-marron-corporativo);
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 5px;
+}
+input[type="checkbox"]:not(old):checked + label:before {
+  box-shadow: inset 0 0 1px 2px var(--color-marron-corporativo);
+  background: var(--color-marron-corporativoxw);
+}
+.form-section textarea {
+  resize: none;
+  padding: 30px 5px;
+}
+:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.inputpeq input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid var(--color-marron-corporativo);
+  border-radius: 3px;
+}
+.btn-form {
+  justify-content: space-between;
+  width: 60%;
+  margin: 50px auto;
+  font-size: 20px;
+}
+.btn-form input {
+  background-color: var(--color-marron-corporativo);
+  border: 0;
+  color: var(--color-white);
+  font-size: 20px;
+  padding: 10px 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+.btn-form input:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 768px) {
+  .inputpeq {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .inputpeq input {
+    width: 48%;
+    margin: 10px auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    margin: 60px auto;
+  }
+  .main-section .form-section {
+    width: 70%;
+  }
+}

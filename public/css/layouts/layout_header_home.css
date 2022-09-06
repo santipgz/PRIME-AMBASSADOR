@@ -1,0 +1,137 @@
+/* 
+ HEADER HOME
+*/
+
+.s-banner {
+  min-height: 800px;
+  background-image: url("../../images/bannerPrincipalHome.jpg");
+  background-size: cover;
+  background-position: left center;
+  align-items: center;
+  justify-content: center;
+}
+.s-banner section {
+  color: var(--color-white);
+  width: 90%;
+  margin: auto;
+}
+.s-banner section p {
+  font-size: 20px;
+  display: none;
+}
+.s-banner section h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.s-banner header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.s-banner header.scrollmenu {
+  background-color: var(--color-black);
+}
+.s-banner header a {
+  color: var(--color-white);
+}
+.s-banner header .navbar {
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.hamburguer {
+  display: block;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-white);
+}
+.nav-branding {
+  font-size: 18px;
+  font-family: var(--font-title);
+}
+.elegiridioma:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--color-marron-corporativo);
+}
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: var(--color-black);
+  width: 100vw;
+  height: 100vh;
+  transition: 0.3s;
+}
+.nav-item {
+  margin: 16px 0;
+}
+.nav-menu.active {
+  left: 0;
+}
+.nav-link {
+  transition: 0.3s ease-in-out;
+}
+.nav-link:hover {
+  border-bottom: 2px solid var(--color-white);
+}
+.hamburguer.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburguer.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburguer.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.idiomdesk {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .s-banner section p {
+    display: block;
+  }
+  .idiomdesk {
+    display: block;
+  }
+  .idiommobil {
+    display: none;
+  }
+  .nav-menu {
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .hamburguer {
+    display: none;
+    cursor: pointer;
+  }
+  .bar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .s-banner section {
+    width: 60%;
+  }
+  .s-banner section h1 {
+    font-size: 50px;
+  }
+}

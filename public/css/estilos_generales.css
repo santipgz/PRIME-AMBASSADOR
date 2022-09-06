@@ -1,0 +1,72 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato:wght@300&family=Montserrat+Alternates:wght@100&display=swap");
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+  --font-lowercase: "Lato", sans-serif;
+  --font-title: "Comfortaa", cursive;
+
+  --page-color: #e8e8e8;
+  --color-black: black;
+  --color-white: white;
+  --color-marron-corporativo: #b4a595;
+}
+/* Estilos comunes */
+
+html {
+  font-family: var(--font-lowercase);
+  background-color: var(--page-color);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-title);
+}
+h2 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 15px;
+}
+h3 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 13px;
+  font-family: var(--font-lowercase);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.flex {
+  display: flex;
+}
+.text-center {
+  text-align: center;
+}
+.bold {
+  font-weight: bolder;
+}
+.separacion-lineas {
+  line-height: 30px;
+}
+.text-justify {
+  text-align: justify;
+}

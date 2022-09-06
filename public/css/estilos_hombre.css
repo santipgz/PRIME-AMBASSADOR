@@ -1,0 +1,205 @@
+/* BANNER INICIO */
+
+.s-banner {
+  min-height: 500px;
+  background-image: url("../images/BANNERMEN.jpg");
+  background-size: cover;
+  background-position: left center;
+}
+
+/* CARACTERISTICAS EMPRESA */
+
+.s-caracteristicas {
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: var(--color-white);
+}
+.s-caracteristicas div {
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+  font-family: var(--font-title);
+}
+.s-caracteristicas div .s-icons {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+/*  RELOJES HOMBRES-CORREAS */
+
+.s-relojeshombre,
+.s-correasrelojess {
+  margin: 60px auto;
+  width: 65%;
+  text-align: center;
+}
+.s-relojeshombre h4,
+.s-correasrelojess h4 {
+  margin-bottom: 10px;
+  color: var(--color-marron-corporativo);
+}
+.d-textrelojes p,
+.d-textcorreas p {
+  display: none;
+}
+.s-relojeshombres-relojes article,
+.s-correasrelojes-relojes article {
+  margin: 40px auto;
+  background-color: var(--color-white);
+  flex-direction: column;
+  padding: 40px 0px;
+  align-items: center;
+  border-radius: 5px;
+}
+.s-relojeshombres-relojes article img,
+.s-correasrelojes-relojes article img {
+  width: 75%;
+}
+.s-relojeshombres-relojes article h3,
+.s-relojeshombres-relojes article h4,
+.s-correasrelojes-relojes article h3,
+.s-correasrelojes-relojes article h4 {
+  padding: 5px 0px;
+}
+.s-relojeshombres-relojes article .h3-title-reloj-men,
+.s-correasrelojes-relojes article .h3-title-correa-men {
+  margin-top: 10px;
+}
+
+/* RELOJES HOMBRE NEGROS */
+
+.fondorelojesnegros {
+  background-color: #222020;
+  color: var(--color-white);
+}
+.relojeshombrenegros {
+  padding: 100px 0px;
+}
+.containerrelojesnegros article {
+  background-color: #1e1c1c;
+}
+
+/* BANNER CORREAS */
+
+.s-banner1publi {
+  background-image: url("../images/Imagen\ 23-6-22\ a\ las\ 18.02.jpg");
+  min-height: 600px;
+  background-size: cover;
+  background-position: left center;
+  margin: 40px auto;
+  background-attachment: fixed;
+}
+
+/* CORREAS RELOJES */
+
+.s-botonescorreasrelojes {
+  justify-content: center;
+  margin: auto;
+}
+.s-botonescorreasrelojes div div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  border: 1px solid var(--color-black);
+}
+.s-botonescorreasrelojes small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+  font-size: 15px;
+}
+.s-botonescorreasrelojes div:nth-child(1) div {
+  background-image: url("../images/btncorrea1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.s-botonescorreasrelojes div:nth-child(2) div {
+  background-image: url("../images/btncorrea2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.s-botonescorreasrelojes div:nth-child(3) div {
+  background-image: url("../images/btncorrea3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hover-div {
+  border: 3px solid var(--color-marron-corporativo) !important;
+}
+.hover-text {
+  color: var(--color-marron-corporativo);
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .s-caracteristicas {
+    flex-wrap: nowrap;
+  }
+  .s-caracteristicas div {
+    width: inherit;
+  }
+  .d-textrelojes,
+  .d-textcorreas {
+    margin-top: 20px;
+  }
+  .d-textrelojes p,
+  .d-textcorreas p {
+    display: block;
+    margin-top: 20px;
+  }
+  .s-relojeshombre,
+  .s-correasrelojess {
+    width: 90%;
+  }
+  .s-relojeshombres-relojes,
+  .s-correasrelojes-relojes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .s-relojeshombres-relojes article,
+  .s-correasrelojes-relojes article {
+    width: 48%;
+  }
+  .s-relojeshombres-relojes article:nth-child(4) {
+    width: 100%;
+    margin-top: -10px;
+  }
+  .s-relojeshombres-relojes article:nth-child(4) img {
+    width: 38%;
+  }
+  .d-textrelojes p,
+  .d-textcorreas p {
+    line-height: 35px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .s-relojeshombres-relojes article,
+  .d-textrelojes,
+  .s-correasrelojes-relojes article,
+  .d-textcorreas {
+    width: 32%;
+  }
+  .s-relojeshombre,
+  .s-correasrelojess {
+    width: 80%;
+  }
+  .d-textrelojes,
+  .d-textcorreas {
+    text-align: justify;
+    font-size: 18px;
+    padding: 0px 20px;
+  }
+
+  .s-relojeshombres-title {
+    text-align: left;
+  }
+}

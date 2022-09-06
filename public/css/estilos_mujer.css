@@ -1,0 +1,243 @@
+/* BANNER INICIO */
+
+.s-banner {
+  min-height: 500px;
+  background-image: url("../images/Imagen\ 23-6-22\ a\ las\ 19.18.JPG");
+  background-size: cover;
+  background-position: left center;
+}
+
+/* CARACTERISTICAS RELEVANTES EMPRESA */
+
+.s-caracteristicas {
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: var(--color-white);
+}
+.s-caracteristicas div {
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+  font-family: var(--font-title);
+}
+.s-caracteristicas div .s-icons {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+/* RELOJES MUJER - CORREAS*/
+
+.s-relojesmujer,
+.s-correasrelojess {
+  margin: 60px auto;
+  width: 65%;
+  text-align: center;
+}
+.s-relojesmujer h4,
+.s-correasrelojess h4 {
+  margin-bottom: 10px;
+  color: var(--color-marron-corporativo);
+}
+.d-textcorreas p {
+  display: none;
+}
+.s-relojesmujer-relojes article,
+.s-correasrelojes-relojes article {
+  margin: 40px auto;
+  background-color: var(--color-white);
+  flex-direction: column;
+  padding: 40px 0px;
+  align-items: center;
+  border-radius: 5px;
+}
+.s-relojesmujer-relojes article img,
+.s-correasrelojes-relojes article img {
+  width: 75%;
+}
+.s-relojesmujer-relojes article h3,
+.s-relojesmujer-relojes article h4,
+.s-correasrelojes-relojes article h3,
+.s-correasrelojes-relojes article h4 {
+  padding: 5px 0px;
+}
+
+.s-relojesmujer-relojes article .h3-title-reloj-mujer,
+.s-correasrelojes-relojes article .h3-title-correa-men {
+  margin-top: 10px;
+}
+
+/* BANNER PUBLICIDAD 1 */
+
+.s-banner1publi {
+  background-image: url("../images/Imagen\ 23-6-22\ a\ las\ 19.44.JPG");
+  min-height: 500px;
+  background-size: cover;
+  background-position: right center;
+  margin: 40px auto;
+  background-attachment: fixed;
+}
+.d-banner1-content {
+  color: var(--color-black);
+  width: 80%;
+  padding: 120px 40px;
+  margin-left: 30px;
+}
+.d-banner1-content h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.d-banner1-content p {
+  padding: 10px 0px;
+}
+
+/* SECCION EXPLORA */
+
+.s-explora {
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 80px auto;
+}
+.s-explora .d-line {
+  background: var(--color-marron-corporativo);
+  height: 35px;
+  margin-bottom: 23px;
+  width: 1px;
+}
+.p-sub {
+  color: var(--color-marron-corporativo);
+  font-size: 12px;
+}
+.s-explora h2 {
+  font-size: 30px;
+}
+.s-explora .p-sub,
+.s-explora h2 {
+  margin-bottom: 20px;
+}
+
+/* CORREAS RELOJES DINAMICO */
+
+.s-botonescorreasrelojes {
+  justify-content: center;
+  margin: auto;
+}
+.s-botonescorreasrelojes div div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  border: 1px solid var(--color-black);
+}
+.s-botonescorreasrelojes small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+  font-size: 15px;
+}
+.s-botonescorreasrelojes div:nth-child(1) div {
+  background-image: url("../images/btncorrea1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.s-botonescorreasrelojes div:nth-child(2) div {
+  background-image: url("../images/btncorrea2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.s-botonescorreasrelojes div:nth-child(3) div {
+  background-image: url("../images/btncorrea3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hover-div {
+  border: 3px solid var(--color-marron-corporativo) !important;
+}
+.hover-text {
+  color: var(--color-marron-corporativo);
+}
+
+@media only screen and (min-width: 600px) {
+  .s-explora {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .s-caracteristicas {
+    flex-wrap: nowrap;
+  }
+  .s-caracteristicas div {
+    width: inherit;
+  }
+
+  .s-relojesmujer,
+  .s-correasrelojess {
+    width: 90%;
+  }
+  .s-relojesmujer-relojes,
+  .s-correasrelojes-relojes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .s-relojesmujer-relojes article,
+  .s-correasrelojes-relojes article {
+    width: 48%;
+  }
+  .s-relojesmujer-relojes article {
+    margin-top: -10px;
+  }
+  .s-relojesmujer-relojes article:nth-child(1) {
+    width: 100%;
+  }
+  .s-relojesmujer-relojes article:nth-child(1) img {
+    width: 38%;
+  }
+  .d-banner1-content {
+    width: 60%;
+  }
+  .d-textcorreas {
+    margin-top: 20px;
+  }
+  .d-textcorreas p {
+    display: block;
+    margin-top: 20px;
+  }
+  .d-textcorreas p {
+    line-height: 35px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .s-relojesmujer-relojes article,
+  .s-correasrelojes-relojes article,
+  .d-textcorreas {
+    width: 32%;
+  }
+  .s-relojesmujer-relojes article:nth-child(1) {
+    width: 32%;
+  }
+  .s-relojesmujer-relojes article:nth-child(1) img {
+    width: 75%;
+  }
+  .s-relojesmujer,
+  .s-correasrelojess {
+    width: 80%;
+  }
+  .s-explora {
+    width: 40%;
+  }
+  .d-banner1-content {
+    width: 40%;
+  }
+  .d-textcorreas {
+    text-align: justify;
+    font-size: 18px;
+    padding: 0px 20px;
+  }
+}

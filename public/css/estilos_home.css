@@ -1,0 +1,314 @@
+/* CARACTERISTICAS RELEVANTES EMPRESA */
+
+.s-caracteristicas {
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: var(--color-white);
+}
+.s-caracteristicas div {
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+  font-family: var(--font-title);
+}
+.s-caracteristicas div .s-icons {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+/*RELOJES DE HOMBRE Y MUJER LINKS */
+
+.s-watches-sex {
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.s-watches-sex img {
+  width: 100%;
+  height: 100%;
+  margin: 10px 10px;
+}
+
+/* RELOJES MAS VENDIDOS */
+
+.s-watches {
+  margin: 80px auto;
+}
+.s-watches h2 {
+  margin-bottom: 50px;
+}
+.a-watches {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.d-watches {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.d-watches img {
+  width: 45%;
+}
+.d-watches h3 {
+  margin: 20px auto;
+}
+
+/* CATEGORIA EXPLORA */
+
+.s-explora,
+.s-descubre {
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 80px auto;
+}
+.s-explora .d-line,
+.s-descubre .d-line {
+  background: var(--color-marron-corporativo);
+  height: 35px;
+  margin-bottom: 23px;
+  width: 1px;
+}
+.p-sub {
+  color: var(--color-marron-corporativo);
+  font-size: 12px;
+}
+.s-explora h2,
+.s-descubre h2 {
+  font-size: 30px;
+}
+.s-explora .p-sub,
+.s-explora h2,
+.s-descubre .p-sub,
+.s-descubre h2 {
+  margin-bottom: 20px;
+}
+
+/* BANNER MISTERIO  */
+
+.s-banner2 {
+  min-height: 500px;
+  background: url("../images/banner_misterio.jpg") no-repeat center;
+  width: 100%;
+  margin: 80px auto;
+}
+.d-banner2-content {
+  color: white;
+  width: 80%;
+  padding: 120px 40px;
+  margin-left: 30px;
+}
+.d-banner2-content h2 {
+  font-size: 35px;
+}
+
+/* CATEGORIA DESCUBRE */
+
+.s-descubre a {
+  padding: 10px 15px;
+  border: 1px solid var(--color-marron-corporativo);
+  margin: 30px auto;
+  border-radius: 5px;
+  color: black;
+  transition: all 1s ease;
+}
+.s-descubre a:hover {
+  background-color: var(--color-marron-corporativo);
+  color: var(--color-white);
+}
+
+/* BANNER 3 */
+
+.s-banner3 {
+  margin: 80px auto;
+  min-height: 700px;
+  background: url("../images/banner_avion.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* IMAGENES GRID */
+
+.s-img-grid {
+  display: none;
+  margin: 80px auto;
+}
+
+/* VIDEO */
+
+.s-video {
+  margin: 80px auto;
+}
+
+/* CARDS DISEÑO - MATERIALES */
+
+.s-contact-we {
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto;
+}
+.s-contact-we img {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.s-contact-we h2 {
+  margin-bottom: 20px;
+}
+.a-card-contact-we {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+.a-card-contact-we h2 {
+  font-weight: lighter;
+}
+
+/* MEDIA QUERYS */
+
+@media only screen and (min-width: 600px) {
+  /*RELOJES DE HOMBRE Y MUJER LINKS */
+  .s-watches-sex img {
+    width: 95%;
+  }
+  /* RELOJES MAS VENDIDOS */
+
+  .a-watches {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .d-watches {
+    width: 50%;
+  }
+  .d-watches img {
+    width: 50%;
+  }
+  /* CATEGORIA EXPLORA */
+
+  .s-explora,
+  .s-descubre {
+    width: 50%;
+  }
+
+  /* BANNER MISTERIO EXPLORA */
+
+  .d-banner2-content {
+    width: 60%;
+  }
+
+  /* CARDS DISEÑO - MATERIALES */
+
+  .s-contact-we {
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 80px auto;
+  }
+  .a-card-contact-we {
+    margin: 0px 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* CARACTERISTICAS RELEVANTES EMPRESA */
+
+  .s-caracteristicas {
+    flex-wrap: nowrap;
+  }
+  .s-caracteristicas div {
+    width: inherit;
+  }
+  /* RELOJES MAS VENDIDOS */
+
+  .a-watches {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .d-watches {
+    width: 33%;
+  }
+  .d-watches img {
+    width: 60%;
+  }
+  /* CATEGORIA EXPLORA */
+
+  .s-explora,
+  .s-descubre {
+    width: 40%;
+  }
+
+  /* BANNER MISTERIO EXPLORA */
+
+  .d-banner2-content {
+    width: 50%;
+  }
+
+  /* IMAGENES GRID */
+
+  .s-img-grid {
+    display: block;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+      "area1 area2"
+      "area1 area3";
+  }
+  .d-img-g-1 {
+    grid-area: area1;
+  }
+  .d-img-g-1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .d-img-g-2 {
+    grid-area: area2;
+  }
+  .d-img-g-2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .d-img-g-3 {
+    grid-area: area3;
+  }
+  .d-img-g-3 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*RELOJES DE HOMBRE Y MUJER LINKS */
+  .s-watches-sex {
+    width: 90%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .s-watches-sex img {
+    width: 48%;
+  }
+
+  /* BANNER MISTERIO EXPLORA */
+  .s-banner2 {
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+  }
+  .d-banner2-content {
+    width: 40%;
+  }
+}

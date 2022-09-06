@@ -1,0 +1,39 @@
+
+
+Santiago Palomo Gutiérrez
+______________
+
+    PRIME AMBASSADOR
+_____________
+
+Pagina web destinada a mostrar la coleccion de relojes prime ambassador para el trabajo final
+de las asignaturas HTML CSS Y JAVASCRIPT.
+
+_____
+
+PRE-REQUISITOS
+
+-La aplicacion web contiene secciones dinamicas, uso de ajax y lectura de ficheros xml y json.
+
+¡Es necesario contar con un servidor web para visualizar la pagina correctamente.!
+
+Yo,particulamente he usado el servidor web local xampp
+
+_____
+
+INSTALACCION DE XAMPP
+
+https://www.apachefriends.org/es/index.html
+
+- Una vez instalado. Ubicaremos en proyecto en la carpeta htdocs del directorio de xampp
+- Clickamos en ON el apache para arrancar el servidor
+- Accedemos a chrome, se nos habra abierto el indice de webs que tenemos en la carpeta htdocs
+- Seleccionamos este proyecto y lo visualizaremos.
+
+De esta manera podremos acceder a la informacion dinamica de la pagina y a el cambio de idiomas.
+
+
+
+
+Santiago Palomo Gutiérrez
+
